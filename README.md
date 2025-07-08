@@ -123,7 +123,7 @@
 - less /proc/cpuinfo: DIsplays detailed CPU information
   ![image](https://github.com/user-attachments/assets/f0a772c3-63b2-41a5-bb19-bca5978f00bc)
 
-### Output Redirection
+### Output RedirectionS
 - lsusb > output_of_lsusb: saves the output of lsusb into a file
 - less output_of_lsusb: view the file one page at a time
   ![image](https://github.com/user-attachments/assets/112cda99-fd01-4a36-bea7-19f136c9d137)
@@ -150,6 +150,67 @@
 - sudo apt install build-essentials: installs tools for compiling
 - gcc hello_world.c -o hello_world_executable: Compiles C file into an executable
 - chmod 777 hello_world_Executable: Grants full permissions to all users
+
+###Apache Web Server
+- sudo apt update: updates any outdated softwares
+- sudo apt install apache2: installs apache web server
+- sudo apt install nmap: installs nmap network scanning tool
+- sudo apt install openssh-server
+- ip a: shows info about ip address
+  ![image](https://github.com/user-attachments/assets/85904fe5-94dc-4450-8c2f-9d99b2746574)
+
+- nano /var/www/html/index.html: opens apache web page
+  ![image](https://github.com/user-attachments/assets/48691df7-3beb-484a-a461-be80265f81ef)
+
+  
+- sudo nano /var/www/html/index.html: grants permission to edit the file
+
+- sudo ufw status verbose: used to change the status of the UFW(Uncomplicated Firewall)
+- sudo ufw enable: enables firewall
+  
+  ![image](https://github.com/user-attachments/assets/7911ad15-5b70-4e3d-976c-0669788d02dd)
+
+### Challenge 1
+SSH of my own machine and file with "Hi_Glenn"
+
+Step 1: install all software require to start SSH server
+  - sudo apt update 
+  - sudo apt install openssh-server
+    ![image](https://github.com/user-attachments/assets/873d9bd2-2868-4f45-aba8-bffb98087018)
+
+  - sudo systemctl enable ssh
+  - sudo systemctl start ssh
+
+    ![image](https://github.com/user-attachments/assets/154f3e6d-dd0c-4425-a045-62949a9e7fbe)
+
+Step 2: Find IP Address
+  - ip a to find ip
+    
+    ![image](https://github.com/user-attachments/assets/220fabdb-0443-48ca-8ef7-ff95f889b7cc)
+    
+  - ip is 127.0.0.1/8
+    
+Step 3: SSH using default user
+  - ssh glennong@localhost
+    ![image](https://github.com/user-attachments/assets/2a3da3ee-c562-469e-a958-aefe392f19a8)
+
+Step 4: Create file to desktop
+  - cd ~/Desktop to go to desktop directory
+  - echo "Hi_Glenn" > Hi_Glenn.txt
+  - exitS
+    ![image](https://github.com/user-attachments/assets/b9dd4e8e-b5e6-4cad-a90d-ef9bd5612d71)
+
+### Challenge 2
+![image](https://github.com/user-attachments/assets/713c5813-4f16-46ca-8d0e-84d11965fd23)
+
+- gedit is a graphical application and SSH does not forward GUI(X11) applications
+- in this case using nano Hi_Glenn.txt would function as well
+  
+### Challenge 3
+scp uses SSH to copy files between computers over the network
+Using scp /home/glennong/Desktop/Hi_Glenn.txt glennong@127.0.0.1:/home/glennong/Desktop
+![image](https://github.com/user-attachments/assets/6c65de1b-a5e0-4ef0-bde3-03d730e431c2)
+
 
   
 
