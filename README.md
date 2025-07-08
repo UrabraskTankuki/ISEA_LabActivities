@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/91c58243-7aec-4e12-90d0-ade7a0f15766)![image](https://github.com/user-attachments/assets/67c8b581-3048-4e6a-a287-eaa65d84060a)# BridgingLabLinux
-
 ## Day1
 
 ## Setting up Virtual machine
@@ -211,8 +209,53 @@ scp uses SSH to copy files between computers over the network
 Using scp /home/glennong/Desktop/Hi_Glenn.txt glennong@127.0.0.1:/home/glennong/Desktop
 ![image](https://github.com/user-attachments/assets/6c65de1b-a5e0-4ef0-bde3-03d730e431c2)
 
+### Challenge 4
+download the file as plain text UTF-8 
+as wget filename.txt
+![image](https://github.com/user-attachments/assets/c1bcd0e0-f341-41f8-913c-28bd13f68b70)
+move all the text files to gutenberg_top10 file
 
-  
+compress the folder using tar.gz
+![image](https://github.com/user-attachments/assets/66ef4358-64cf-4fae-bf08-2104dba43cf3)
+
+use scp to send the files to Desktop
+![image](https://github.com/user-attachments/assets/ca17bdfd-eaed-4d71-8ed2-0f9d19367118)
+
+## linux Permissions
+Create 3 new user Alice, Bob and Mallory
+
+create a file sharedfile.txt and make alice an owner
+
+![image](https://github.com/user-attachments/assets/60ed83ff-6961-49d8-8d3a-4b72706bf42c)
+
+
+Create a group add alice and bob to the group as projectgroup
+
+![image](https://github.com/user-attachments/assets/32255bfa-8329-406c-a30a-16e8fc727ea0)
+
+assign projectgroup the file sharedfile.txt
+grant bob permission for reading but no writing
+
+![image](https://github.com/user-attachments/assets/08118ab7-01d0-4eff-a5c6-752e7b02f39b)
+
+#### log into alice profile
+input nano /home/sharedfile.txt to open file
+![image](https://github.com/user-attachments/assets/9b1cffe0-00bb-4a3e-8fc5-61c1ec09692d)
+
+![image](https://github.com/user-attachments/assets/f2028d12-91dc-4fe7-8667-e0947182b249)
+alice can read and write the file
+
+#### log into bob profile
+
+input cat /home/sharedfile.txt to see the text
+input nano /home/sharedfile.txt to open file, it should say unwritable
+![image](https://github.com/user-attachments/assets/b551a9b9-acaa-4fa3-baa8-8846e22b39cc)
+
+![image](https://github.com/user-attachments/assets/8c34af2d-caca-4f80-a7d6-5e998f65fbbe)
+
+#### log into mallory profile
+input cat /home/sharedfile.txt to see the text
+![image](https://github.com/user-attachments/assets/e86cf9f6-0f92-4a7e-873d-cfd3437a8446)
 
 
 
