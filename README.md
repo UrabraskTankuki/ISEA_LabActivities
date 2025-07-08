@@ -108,11 +108,48 @@
   ![image](https://github.com/user-attachments/assets/ae0fbc1b-0ce9-4c57-a964-e3bb415e19d8)
   ![image](https://github.com/user-attachments/assets/7fe742a9-b7bd-4d04-be09-be745a1c13e3)
 
-- nslookup google.com
-- lsusb
-- lspci
-- less /proc/cpuinfo
+### DNS Resolution
+- nslookup google.com: Resolves google.com to its IP address using DNS
 
+### Hardware Inspection
+- lsusb: List connected USB devices
+- 
+  ![image](https://github.com/user-attachments/assets/41fae97c-457d-4786-801c-e668a189e787)
+
+- lspci: Lists PCI devices
+  
+  ![image](https://github.com/user-attachments/assets/73e88d26-2763-4e49-8fac-ee9cb0f6f369)
+
+- less /proc/cpuinfo: DIsplays detailed CPU information
+  ![image](https://github.com/user-attachments/assets/f0a772c3-63b2-41a5-bb19-bca5978f00bc)
+
+### Output Redirection
+- lsusb > output_of_lsusb: saves the output of lsusb into a file
+- less output_of_lsusb: view the file one page at a time
+  ![image](https://github.com/user-attachments/assets/112cda99-fd01-4a36-bea7-19f136c9d137)
+
+- cat output_of_lsusb: displays the entire file of content
+  ![image](https://github.com/user-attachments/assets/e808c146-4a52-47e2-9e7a-3bd590a65b7d)
+
+- ls -la output_of_lsusb: shows permissions of the file
+  ![image](https://github.com/user-attachments/assets/3da5c02e-6bfc-41d0-ac41-6bd6742ce3ff)
+
+- rm output_of_lsusb: deletes the file
+
+### Software Installion and Compilation
+
+- sudo apt install whois : installs the whois tool from package manager
+- sudoo apt search vl: searches for VLC package availability
+  ![image](https://github.com/user-attachments/assets/f75ad39f-7560-498b-a416-e4d072aba377)
+
+- sudo apt install vlc: install VLC player
+- sudo apt update: Updates the list of available packages
+- sudo apt upgrade: Installs the latest versions of installed packages
+  ![image](https://github.com/user-attachments/assets/d16739fb-3fb8-4da8-99b7-cd46d3ea8f4c)
+
+- sudo apt install build-essentials: installs tools for compiling
+- gcc hello_world.c -o hello_world_executable: Compiles C file into an executable
+- chmod 777 hello_world_Executable: Grants full permissions to all users
 
   
 
