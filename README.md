@@ -1,12 +1,12 @@
-## Day1
+# **Day1**
 
-## Setting up Virtual machine
+# Setting up Virtual machine
 
   - download lubuntu 24.04.2(Noble Numbat) 64bit (I downloaded from https://lubuntu.me)
   - create a virtual machine using oracle VM
   - set username and password for ubuntu account
 
-## Using Ubuntu command lines 
+# Using Ubuntu command lines 
 
  - ubuntu commands refer to directories in the system
  - each command interacts with the directory in different ways
@@ -20,9 +20,9 @@
    ![image](https://github.com/user-attachments/assets/10441f5f-72c0-4570-9de8-08a1b030b6d5)
    ![image](https://github.com/user-attachments/assets/27367be2-e652-4206-a55f-944465c288f9)
    
-## Using Ubuntu command lines 
+# Using Ubuntu command lines 
 
-### CLI Familiarisation
+## CLI Familiarisation
 - ps -e: lists all current running processes
   ![image](https://github.com/user-attachments/assets/bca7ee8e-2776-4262-9438-54f0359256bf)
 
@@ -85,7 +85,7 @@
 - sudo adduser testuser: creates a new user
   ![image](https://github.com/user-attachments/assets/3219f5fa-dd22-4817-92c0-22e6e126963a)
 
-### Netowrk Configuration
+## Netowrk Configuration
 - ip a: disaplays network interface and IP addresses
   ![image](https://github.com/user-attachments/assets/1c23fd22-2ec5-463f-9494-c9cd315710f7)
 
@@ -106,10 +106,10 @@
   ![image](https://github.com/user-attachments/assets/ae0fbc1b-0ce9-4c57-a964-e3bb415e19d8)
   ![image](https://github.com/user-attachments/assets/7fe742a9-b7bd-4d04-be09-be745a1c13e3)
 
-### DNS Resolution
+## DNS Resolution
 - nslookup google.com: Resolves google.com to its IP address using DNS
 
-### Hardware Inspection
+## Hardware Inspection
 - lsusb: List connected USB devices
 - 
   ![image](https://github.com/user-attachments/assets/41fae97c-457d-4786-801c-e668a189e787)
@@ -121,7 +121,7 @@
 - less /proc/cpuinfo: DIsplays detailed CPU information
   ![image](https://github.com/user-attachments/assets/f0a772c3-63b2-41a5-bb19-bca5978f00bc)
 
-### Output RedirectionS
+## Output RedirectionS
 - lsusb > output_of_lsusb: saves the output of lsusb into a file
 - less output_of_lsusb: view the file one page at a time
   ![image](https://github.com/user-attachments/assets/112cda99-fd01-4a36-bea7-19f136c9d137)
@@ -134,7 +134,7 @@
 
 - rm output_of_lsusb: deletes the file
 
-### Software Installion and Compilation
+## Software Installion and Compilation
 
 - sudo apt install whois : installs the whois tool from package manager
 - sudoo apt search vl: searches for VLC package availability
@@ -149,7 +149,7 @@
 - gcc hello_world.c -o hello_world_executable: Compiles C file into an executable
 - chmod 777 hello_world_Executable: Grants full permissions to all users
 
-###Apache Web Server
+## Apache Web Server
 - sudo apt update: updates any outdated softwares
 - sudo apt install apache2: installs apache web server
 - sudo apt install nmap: installs nmap network scanning tool
@@ -168,7 +168,7 @@
   
   ![image](https://github.com/user-attachments/assets/7911ad15-5b70-4e3d-976c-0669788d02dd)
 
-### Challenge 1
+## Challenge 1
 SSH of my own machine and file with "Hi_Glenn"
 
 Step 1: install all software require to start SSH server
@@ -198,18 +198,18 @@ Step 4: Create file to desktop
   - exitS
     ![image](https://github.com/user-attachments/assets/b9dd4e8e-b5e6-4cad-a90d-ef9bd5612d71)
 
-### Challenge 2
+## Challenge 2
 ![image](https://github.com/user-attachments/assets/713c5813-4f16-46ca-8d0e-84d11965fd23)
 
 - gedit is a graphical application and SSH does not forward GUI(X11) applications
 - in this case using nano Hi_Glenn.txt would function as well
   
-### Challenge 3
+## Challenge 3
 scp uses SSH to copy files between computers over the network
 Using scp /home/glennong/Desktop/Hi_Glenn.txt glennong@127.0.0.1:/home/glennong/Desktop
 ![image](https://github.com/user-attachments/assets/6c65de1b-a5e0-4ef0-bde3-03d730e431c2)
 
-### Challenge 4
+## Challenge 4
 download the file as plain text UTF-8 
 as wget filename.txt
 ![image](https://github.com/user-attachments/assets/c1bcd0e0-f341-41f8-913c-28bd13f68b70)
@@ -238,14 +238,14 @@ grant bob permission for reading but no writing
 
 ![image](https://github.com/user-attachments/assets/08118ab7-01d0-4eff-a5c6-752e7b02f39b)
 
-#### log into alice profile
+### log into alice profile
 input nano /home/sharedfile.txt to open file
 ![image](https://github.com/user-attachments/assets/9b1cffe0-00bb-4a3e-8fc5-61c1ec09692d)
 
 ![image](https://github.com/user-attachments/assets/f2028d12-91dc-4fe7-8667-e0947182b249)
 alice can read and write the file
 
-#### log into bob profile
+### log into bob profile
 
 input cat /home/sharedfile.txt to see the text
 input nano /home/sharedfile.txt to open file, it should say unwritable
@@ -253,7 +253,7 @@ input nano /home/sharedfile.txt to open file, it should say unwritable
 
 ![image](https://github.com/user-attachments/assets/8c34af2d-caca-4f80-a7d6-5e998f65fbbe)
 
-#### log into mallory profile
+### log into mallory profile
 input cat /home/sharedfile.txt to see the text
 ![image](https://github.com/user-attachments/assets/e86cf9f6-0f92-4a7e-873d-cfd3437a8446)
 
