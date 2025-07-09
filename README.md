@@ -257,8 +257,78 @@ input nano /home/sharedfile.txt to open file, it should say unwritable
 input cat /home/sharedfile.txt to see the text
 ![image](https://github.com/user-attachments/assets/e86cf9f6-0f92-4a7e-873d-cfd3437a8446)
 
+## TCO (Total Cost of Ownership)
 
+### outline
+- run servers in the cloud or run your own data center locally
+- Employ your own IT supoort staff or subcontracted the work
+- Use Lenovo, HP, Dell AND/OR Apple as a laptop vendor
 
+### Printer A (Budget Inkjet)
+| **Cost Component**     | **Amount (AUD)** |
+|------------------------|------------------|
+| Printer Purchase       | $100             |
+| Cartridge Cost         | $24,375          |
+| Paper Cost             | $2,340           |
+| Electricity Cost       | $93.60           |
+| Maintenance (5 yrs)    | $100             |
+| Total TCO (5 years)| $27,008.60  |
+
+### Printer B (Business Laser)
+| **Cost Component**     | **Amount (AUD)** |
+|------------------------|------------------|
+| Printer Purchase       | $500             |
+| Cartridge Cost         | $7,800           |
+| Paper Cost             | $2,340           |
+| Electricity Cost       | $1,248.00        |
+| Maintenance (5 yrs)    | $250             |
+| Total TCO (5 years)| $12,138.00  |
+
+### Conparison Summary Table
+| **Item**                  | **Printer A (Inkjet)** | **Printer B (Laser)** |
+|---------------------------|------------------------|------------------------|
+| Purchase Price            | $100                  | $500                  |
+| Cartridge Cost (5 yrs)    | $24,375               | $7,800                |
+| Paper Cost (5 yrs)        | $2,340                | $2,340                |
+| Electricity Cost (5 yrs)  | $93.60                | $1,248                |
+| Maintenance (5 yrs)       | $100                  | $250                  |
+| Total TCO             | $27,008.60       | $12,138.00        |
+
+Analysis
+Printers require different cost components needed to function
+  - Cartridge are used to put ink on printed paper
+  - paper is used as a medium for printed document
+  - Electricty used is based on the how detailed the prints are from the printer
+  - maintenance cost would depend on the complexity of the printer
+
+Printer A (Inkjet) has a lower upfront cost but extremely high cartridge costs due to low page yield.
+
+Printer B (Laser) has a higher purchase price but saves over $14,800 in TCO over 5 years thanks to efficient toner usage.
+
+Electricity cost is higher for the laser printer, but it's still negligible compared to consumables.
+
+Which printer is better based on TCO?
+Printer B is much more cost-effective long-term.
+
+Would your answer change for a home user who prints 5 pages/week?
+Yes — for minimal printing, Printer A might be cheaper and more practical despite the high ink cost per page.
+
+Other factors to consider?
+
+Print quality
+
+Speed
+
+Noise level
+
+Duplex (double-sided) printing
+
+Support/Warranty
+
+Wireless or mobile printing options
+
+Time period where both cost the same?
+➤ You could estimate this by plotting cumulative cost over time. For this setup, Printer A quickly becomes more expensive — the break-even happens in under 1 year.
 
 
 
