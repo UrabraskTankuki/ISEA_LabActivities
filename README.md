@@ -431,6 +431,7 @@ sudo apt install apache2 to check if any missing files
 
 Creating a domain name, i use duckDNS.org
 to make a unique domain name, my website is www.asmoranomardicadaistinaculdacar.duckdns.org
+video of working demo: https://youtu.be/3wpwqoxIkk8
 
 ![image](https://github.com/user-attachments/assets/0e07fe35-5d41-4aec-85f9-4e88b4106be7)
 
