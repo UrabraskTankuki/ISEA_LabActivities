@@ -73,7 +73,7 @@ video of how to download ubuntu: https://youtu.be/6Inw_7S2EBo
 - sudo adduser testuser: creates a new user
   ![image](https://github.com/user-attachments/assets/3219f5fa-dd22-4817-92c0-22e6e126963a)
 
-## Netowrk Configuration
+## Network Configuration
 - ip a: disaplays network interface and IP addresses
   ![image](https://github.com/user-attachments/assets/1c23fd22-2ec5-463f-9494-c9cd315710f7)
 
