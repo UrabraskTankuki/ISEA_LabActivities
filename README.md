@@ -5,7 +5,7 @@
   - download lubuntu 24.04.2(Noble Numbat) 64bit (I downloaded from https://lubuntu.me)
   - create a virtual machine using oracle VM
   - set username and password for ubuntu account
-
+ daw
 video of how to download ubuntu: https://youtu.be/6Inw_7S2EBo
 
 # Using Ubuntu command lines 
