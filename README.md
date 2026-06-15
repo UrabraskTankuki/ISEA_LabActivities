@@ -1,4 +1,6 @@
-# **Day1**
+# **Session 1**
+
+# *Session 1a*
 
 # Setting up Virtual machine
 
@@ -247,6 +249,7 @@ input nano /home/sharedfile.txt to open file, it should say unwritable
 input cat /home/sharedfile.txt to see the text
 ![image](https://github.com/user-attachments/assets/e86cf9f6-0f92-4a7e-873d-cfd3437a8446)
 
+# **Session 2**
 ## TCO (Total Cost of Ownership)
 
 ### outline
