@@ -123,7 +123,7 @@ network config: https://youtu.be/Cf_DxFJ2scI
   ![image](https://github.com/user-attachments/assets/3da5c02e-6bfc-41d0-ac41-6bd6742ce3ff)
 
 - rm output_of_lsusb: deletes the file
-
+# *Lab 1b*
 ## Software Installion and Compilation
 
 - sudo apt install whois : installs the whois tool from package manager
